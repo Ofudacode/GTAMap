@@ -13,7 +13,7 @@ var mapHeight = 1000; // Höhe der Karte in Pixeln
 var bounds = [[100, 100], [mapHeight, mapWidth]];
 
 // Bildoverlay hinzufügen
-L.imageOverlay('https://github.com/Ofudacode/GTAMap/blob/main/gtavmap%20-%20Kopie.jpg', bounds).addTo(map);
+L.imageOverlay('images/gtavmap.jpg', bounds).addTo(map);
 
 // Karte auf Bild zentrieren
 map.fitBounds(bounds);
