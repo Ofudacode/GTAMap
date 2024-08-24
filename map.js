@@ -13,8 +13,7 @@ var mapHeight = 1000; // Höhe der Karte in Pixeln
 var bounds = [[100, 100], [mapHeight, mapWidth]];
 
 // Bildoverlay hinzufügen
-L.imageOverlay('https://www.bragitoff.com/wp-content/uploads/2015/11/GTAV-HD-MAP-satellite.jpg', bounds).addTo(map); // Originale Map 8k
-// L.imageOverlay('https://www.bragitoff.com/wp-content/uploads/2015/11/GTAV_SATELLITE_2048x2048.png', bounds).addTo(map); // Map in 4k
+L.imageOverlay('https://www.bragitoff.com/wp-content/uploads/2015/11/GTAV-HD-MAP-satellite.jpg', bounds).addTo(map);
 
 // Karte auf das Bild zentrieren
 map.fitBounds(bounds);
