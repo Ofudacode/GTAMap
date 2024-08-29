@@ -1,21 +1,21 @@
-
 #map {
     height: 100vh; 
     width: 100vw;  
-    position: relative; 
+    position: absolute; 
     background-color: #143d6b;
 }
 
 #coordinates {
     position: absolute; 
-    bottom: 0px; 
-    left: 0px;   
+    bottom: 10px; 
+    left: 10px;   
     padding: 5px; 
     background: rgba(255, 255, 255, 0.8); 
     border-radius: 3px; 
     font-family: Arial, sans-serif; 
     font-size: 12px; 
     z-index: 1000; 
+    pointer-events: auto; /* Sicherstellen, dass die Koordinaten anklickbar sind */
 }
 
 html, body, #map { 
@@ -25,9 +25,46 @@ html, body, #map {
     padding: 0; 
     z-index: 1; 
     background: #143d6b; 
-  }
+    overflow: hidden;
+}
 
-  .leaflet-control-zoom {
+.leaflet-control-zoom {
     display: none; 
 }
 
+/* Custom Menu Settings */
+#menu {
+    width: 130px; /* Menü Breite */
+    background: rgba(255, 255, 255, 0.8); 
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 2000; 
+    margin: 10px;
+    pointer-events: auto; 
+    position: absolute; 
+    top: 10px; 
+    left: 10px; 
+}
+
+#menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#menu li {
+    margin: 5px 0;
+}
+
+#menu a {
+    text-decoration: none;
+    color: black;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+#menu a:hover {
+    text-decoration: underline;
+}
