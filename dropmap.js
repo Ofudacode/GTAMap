@@ -12,7 +12,7 @@ L.tileLayer('images/{z}/{x}/{y}.jpg', {
 
 var coordDisplay = document.getElementById('coordinates');
 
-var marker = L.marker([37.16, -59.77]).addTo(map);
+var marker = L.marker([37.16, -59.77]).addTo(map); // Marker für Drops müssen noch per Datenbank eingefügt werden
 marker.bindPopup("Marker Drop 1!");
 var marker2 = L.marker([-51.89, -47.68]).addTo(map);
 marker2.bindPopup("Marker Drop 2!");
