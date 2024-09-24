@@ -28,14 +28,14 @@ async function initMap() {
 
     // Verschiedene Icons definieren
     var iconVinewood = L.icon({
-        iconUrl: 'custommarker/markerred',
+        iconUrl: 'custommarker/markerred.png',
         iconSize: [25, 41], // Größe des Icons
         iconAnchor: [12, 41], // Punkt des Icons, der die Markierung auf der Karte anzeigt
         popupAnchor: [1, -34] // Punkt, von dem aus das Popup aus dem Icon öffnet
     });
 
     var iconPaleto = L.icon({
-        iconUrl: 'custommarker/markergreen',
+        iconUrl: 'custommarker/markergreen.png',
         iconSize: [25, 41],
         iconAnchor: [12, 41],
         popupAnchor: [1, -34]
