@@ -1,4 +1,3 @@
-// JSON Datei
 async function loadLocations() {
     try {
         const response = await fetch('dealerinfos.json'); // Pfad zur JSON Datei im Ordner
@@ -10,7 +9,6 @@ async function loadLocations() {
     }
 }
 
-// Map wird geladen
 async function initMap() {
     const locations = await loadLocations();
 
@@ -28,10 +26,39 @@ async function initMap() {
 
     var coordDisplay = document.getElementById('coordinates'); // Koordinaten unten Links
 
+    // Verschiedene Icons definieren
+    var iconVinewood = L.icon({
+        iconUrl: 'custommarker/markerred',
+        iconSize: [25, 41], // Größe des Icons
+        iconAnchor: [12, 41], // Punkt des Icons, der die Markierung auf der Karte anzeigt
+        popupAnchor: [1, -34] // Punkt, von dem aus das Popup aus dem Icon öffnet
+    });
+
+    var iconPaleto = L.icon({
+        iconUrl: 'custommarker/markergreen',
+        iconSize: [25, 41],
+        iconAnchor: [12, 41],
+        popupAnchor: [1, -34]
+    });
+
     // JSON Daten auslesen und verwenden
     locations.forEach(location => {
         const [lat, lng] = location.pos.split(',').map(Number);
-        var marker = L.marker([lat, lng]).addTo(map); // Marker setzen
+
+        // Wählen Sie das Icon basierend auf dem 'type' Attribut
+        var icon;
+        switch (location.type) {
+            case 'vinewood':
+                icon = iconVinewood;
+                break;
+            case 'paleto':
+                icon = iconPaleto;
+                break;
+            default:
+                icon = iconVinewood; // Standard-Icon
+        }
+
+        var marker = L.marker([lat, lng], { icon: icon }).addTo(map); // Marker setzen
 
         // Popup Content anpassen der kleinen Blase
         var popupContent = `

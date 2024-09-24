@@ -1,36 +1,38 @@
 [
         {
-        "id": 1,
-        "name": "Vinewood 1",
-        "img": "https://images8.alphacoders.com/133/1332278.jpeg",
-        "pos": "-27.99, -11.95"
+            "id": 1,
+            "name": "Vinewood 1",
+            "img": "https://images8.alphacoders.com/133/1332278.jpeg",
+            "pos": "-27.99, -11.95",
+            "type": "vinewood"
         },
-
         {
-        "id": 2,
-        "name": "Vinewood 2",
-        "img": "https://i.imgur.com/boiDKpO.jpg",
-        "pos": "3.16, -49.22"  
+            "id": 2,
+            "name": "Vinewood 2",
+            "img": "https://i.imgur.com/boiDKpO.jpg",
+            "pos": "3.16, -49.22",
+            "type": "vinewood"
         },
-
         {
-        "id": 3,
-        "name": "Vinewood 3",
-        "img": "https://i.imgur.com/EOJY9iA.jpeg",
-        "pos": "-24.85, -68.2"  
+            "id": 3,
+            "name": "Vinewood 3",
+            "img": "https://i.imgur.com/EOJY9iA.jpeg",
+            "pos": "-24.85, -68.2",
+            "type": "vinewood"
         },
-
         {
-        "id": 4,
-        "name": "Vinewood 4",
-        "img": "https://i.imgur.com/jCW0izb.png",
-        "pos": "29.84, 5.27"  
+            "id": 4,
+            "name": "Vinewood 4",
+            "img": "https://i.imgur.com/jCW0izb.png",
+            "pos": "29.84, 5.27",
+            "type": "vinewood"
         },
-
         {
-        "id": 5,
-        "name": "Paleto 1",
-        "img": "https://i.imgur.com/Ga92Fo7.jpg",
-        "pos": "79.17, -10.9"  
+            "id": 5,
+            "name": "Paleto 1",
+            "img": "https://i.imgur.com/Ga92Fo7.jpg",
+            "pos": "79.17, -10.9",
+            "type": "paleto"
         }
-]
+    ]
+    
