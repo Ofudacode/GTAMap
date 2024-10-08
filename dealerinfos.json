@@ -3,35 +3,35 @@
             "id": 1,
             "name": "Vinewood 1",
             "img": "https://images8.alphacoders.com/133/1332278.jpeg",
-            "pos": "-27.99, -11.95",
+            "pos": "83.32, -163.48",
             "type": "vinewood"
         },
         {
             "id": 2,
             "name": "Vinewood 2",
             "img": "https://i.imgur.com/boiDKpO.jpg",
-            "pos": "3.16, -49.22",
+            "pos": "79.94, -163.13",
             "type": "vinewood"
         },
         {
             "id": 3,
             "name": "Vinewood 3",
             "img": "https://i.imgur.com/EOJY9iA.jpeg",
-            "pos": "-24.85, -68.2",
+            "pos": "82.4, -140.98",
             "type": "vinewood"
         },
         {
             "id": 4,
             "name": "Vinewood 4",
             "img": "https://i.imgur.com/jCW0izb.png",
-            "pos": "29.84, 5.27",
+            "pos": "72.4, -166.64",
             "type": "vinewood"
         },
         {
             "id": 5,
             "name": "Paleto 1",
             "img": "https://i.imgur.com/Ga92Fo7.jpg",
-            "pos": "79.17, -10.9",
+            "pos": "57.33, -165.23",
             "type": "paleto"
         }
     ]
